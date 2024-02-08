@@ -1,0 +1,93 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECECEC;
+}
+
+.header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.checklist {
+    font-size: small;
+}
+
+@media (max-width: 480px) {
+    .wrapDiv {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCFCFC;
+    }
+}
+
+@media (min-width: 480px) {
+    .wrapDiv {
+        padding: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCFCFC;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapDiv {
+        padding: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCFCFC;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapDiv {
+        padding: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCFCFC;
+    }
+}

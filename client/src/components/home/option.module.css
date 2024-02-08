@@ -1,0 +1,25 @@
+.option {
+    margin-top: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    cursor: pointer;
+    z-index: 530;
+}
+
+.option:hover {
+    background-color: lightgray;
+}
+
+.optionIcon {
+    margin-right: 1vw;
+    margin-left: 0.3vw;
+}

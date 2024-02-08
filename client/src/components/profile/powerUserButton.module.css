@@ -1,0 +1,40 @@
+.button {
+    background-color: #44D4B4;
+    border: none;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;   
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #18E7A9;
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 11vw;
+        height: 6.5vh;
+    }
+}
+
+@media (min-width: 480px) {
+    .button {
+        width: 6vw;
+        height: 6vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .button {
+        width: 5.5vw;
+        height: 5.5vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .button {
+        width: 5vw;
+        height: 5.5vh;
+    }
+}

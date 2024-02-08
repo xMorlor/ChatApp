@@ -1,0 +1,179 @@
+.wrapDiv {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.chatsNormal {
+    height: 100vh;
+    width: 26vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chatsNormal::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.chatsNormal::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.chatsNormal::-webkit-scrollbar-track {
+    background: none;
+}
+
+.chatsMobile {
+    height: 100vh;
+    width: 26vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+    overflow-y: auto;
+}
+
+.chatsMobile::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.chatsMobile::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.chatsMobile::-webkit-scrollbar-track {
+    background: none;
+}
+
+.currentChat {
+    height: 100vh;
+    width: 57vw;
+    border: none;
+    display: grid;
+    background-color: #fcfcfc;
+    position: relative;
+    overflow: hidden;
+}
+
+.currentChat {
+    height: 100vh;
+    width: 57vw;
+    border: none;
+    display: grid;
+    background-color: #fcfcfc;
+    position: relative;
+    overflow: hidden;
+}
+
+.messages {
+    width: 57vw;
+    height: 82.5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    gap: 10px;
+    background-color: #fcfcfc;
+    position: relative;
+    overflow-y: auto;
+}
+
+.messages::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: none;
+}
+
+.info {
+    height: 100vh;
+    width: 14.7vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+}
+
+.wrapChatAndInfo {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .chatsMobile {
+        width: 100%;
+    }
+
+    .currentChat {
+        width: 100%;
+    }
+
+    .messages {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .chatsNormal {
+        width: 34vw;
+    }
+
+    .currentChat {
+        width: 66vw;
+    }
+
+    .messages {
+        width: 66vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chatsNormal {
+        width: 44vw;
+    }
+
+    .currentChat {
+        width: 56vw;
+    }
+
+    .messages {
+        width: 56vw;
+    }
+}

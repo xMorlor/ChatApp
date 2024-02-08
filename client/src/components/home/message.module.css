@@ -1,0 +1,74 @@
+.sentMessage {
+    justify-self: right;
+    background-color: #44d4b4;
+    height: fit-content;
+    padding: 5px;
+    max-width: 40vw;
+    margin: 7px;
+    border-radius: 1em;
+    font-size: 17px;
+    color: white;
+    word-wrap: break-word;
+    width: fit-content;
+    z-index: 3;
+    float: right;
+    margin-right: 12px;
+}
+
+.receivedMessage {
+    justify-self: left;
+    background-color: #ececec;
+    height: fit-content;
+    padding: 5px;
+    max-width: 40vw;
+    margin: 7px;
+    border-radius: 1em;
+    font-size: 17px;
+    margin-left: 12px;
+    width: fit-content;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 4.5vh;
+    height: 4.5vh;
+    border-radius: 50%;
+}
+
+.senderName {
+    margin-left: 4vw;
+    font-size: small;
+}
+
+.wrap {
+    margin-left: 1vw;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.wrp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.date {
+    position: absolute;
+    background-color: #242424;
+    border-radius: 8px;
+    color: whitesmoke;
+    padding: 1vh;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    z-index: 5;
+}
+
+.receivedMessage:hover ~ .date {
+   opacity: 1;
+}
+
+.sentMessage:hover ~ .date {
+   opacity: 1;
+}

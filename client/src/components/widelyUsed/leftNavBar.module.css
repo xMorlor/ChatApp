@@ -1,0 +1,11 @@
+.leftNavBar {
+    height: 100vh;
+    width: fit-content;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    z-index: 100;
+}

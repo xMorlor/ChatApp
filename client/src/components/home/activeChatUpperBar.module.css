@@ -1,0 +1,237 @@
+.wrapDiv {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    position: sticky;
+    top: 0;
+    background-color: #fcfcfc;
+    z-index: 15;
+}
+
+.profilePicture {
+    margin: 10px;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.wrapForNameAndStatus {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 20vw;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.status {
+    color: #9A9796;
+}
+
+.buttonIcons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.icon {
+    width: 8vh;
+    height: 4vh;
+    cursor: pointer;
+    margin-right: 25px;
+    border: none;
+    background-color: #fcfcfc;
+}
+
+.icon:hover svg {
+    fill: lightgray;
+}
+
+.dialog {
+    padding: 2%;
+    z-index: 100;
+    background: #F9F9F9;
+    border: none;
+    border-radius: 1rem;  
+}
+
+.dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.dialogWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogHeader {
+    margin-top: auto;
+}
+
+.textInput {
+    width: 80%;
+    padding: 12px 24px;
+    margin-bottom: 1.3vh;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.textInput:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.users {
+    height: calc(100% - 9vh);
+    max-height: 55vh;
+    margin-top: 1vh;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.user {
+    align-items: center;
+    width: 90%;
+    height: 7vh;
+    min-height: 7vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vw;
+}
+
+.user:hover {
+    border-radius: 8px;
+    background-color: rgba(188, 186, 186, 0.5);
+    cursor: pointer;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vw;
+}
+
+.friends {
+    margin-top: 1vh;
+    width: 90%;
+    height: 20vh;
+    max-height: 20vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 80%;
+}
+
+.x {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vh;
+    height: 3vh;
+    border: 1px solid transparent; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.x:hover {
+    background-color: #15c28e; 
+}
+
+.selectedFriend {
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #18E7A9;
+    padding: 7px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.searchedFriends {
+    height: calc(100% - 9vh); 
+    margin-top: 5vh;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.searchedFriend {
+    align-items: center;
+    width: 90%;
+    height: 7vh;
+    min-height: 7vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vw;
+}
+
+.searchedFriend:hover {
+    border-radius: 8px;
+    background-color: rgba(188, 186, 186, 0.5);
+    cursor: pointer;
+}
+
+.usersDialog {
+    padding: 2%;
+    z-index: 10;
+    background: #F9F9F9;
+    border: none;
+    border-radius: 1rem;  
+    width: 45vw;
+    height: 80vh;
+}
+
+.usersDialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.usersDialogWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.usersDialogRowWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}

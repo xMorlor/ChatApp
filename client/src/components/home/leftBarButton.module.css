@@ -1,0 +1,42 @@
+.buttonLeftBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonLeftBar:hover svg {
+    fill: white;
+}
+
+@media (max-width: 480px) {
+    .buttonLeftBar {
+        width: 3.5vw;
+        height: 3.5vw;
+        padding: 9px 15px 9px 15px;
+    }
+}
+
+@media (min-width: 480px) {
+    .buttonLeftBar {
+        width: 2vw;
+        height: 2vw;
+        padding: 9px 15px 9px 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .buttonLeftBar {
+        width: 2.3vw;
+        height: 2.3vw;
+        padding: 9px 23px 9px 23px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .buttonLeftBar {
+        width: 2.3vw;
+        height: 2.3vw;
+        padding: 9px 23px 9px 23px;
+    }
+}

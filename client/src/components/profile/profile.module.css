@@ -1,0 +1,208 @@
+.wrap {
+    padding: 17px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.profileRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.profileColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexColumn {
+    justify-content: center;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+}
+
+.profilePic {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #242424;
+}
+
+.name {
+    font-size: x-large;
+}
+
+.location {
+    font-size: large;
+}
+
+.bio::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.bio::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.bio::-webkit-scrollbar-track {
+    background: none;
+}
+
+.sliderWrap {
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.dialog {
+    padding: 2%;
+    z-index: 10;
+    background: #F9F9F9;
+    border: none;
+    border-radius: 1rem;  
+}
+
+.dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.dialogWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsWrap {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea {
+    resize: none;
+    width: 16vw;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 10px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    overflow-y: auto;   
+}
+
+.textarea::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.textarea::-webkit-scrollbar-track {
+    background: none;
+}
+
+.inputField {
+    width: 16vw;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.select {
+    width: 19vw;
+    height: 3vh;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    cursor: pointer;
+    border: 1px solid #575756;
+}
+
+.label {
+    margin-bottom: 5px;
+    margin-top: 1vw;
+}
+
+.dialogHeader {
+    margin-top: auto;
+}
+
+.picInput {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.powerButtonWrap {
+    margin-left: auto;
+}
+
+.bioAndButtonWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bio {
+    padding: 8px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+    margin-left: auto;
+    background-color: #FCFCFC;
+    border-radius: 18px;
+    max-width: 20vw;
+    max-height: 24vh;
+    margin-right: 50px;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}
+
+@media (max-width: 480px) {
+    .bio {
+        max-width: 45vw;
+        max-height: 24vh;
+        margin-right: 30px;
+    }
+
+    .inputField {
+        width: 45vw;
+    }
+
+    .select {
+        width: 45vw;
+        height: 4vh;
+    }
+
+    .textarea {
+        width: 45vw;
+    }
+}

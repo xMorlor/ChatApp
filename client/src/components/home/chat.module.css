@@ -1,0 +1,105 @@
+.chat {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECEC;
+    padding: 24px;
+    border-radius: 9px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #242424;
+    cursor: pointer;
+}
+
+.chat:hover {
+    background-color: #fcfcfc;
+}
+
+.selectedChat {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 9px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #242424;
+    background: linear-gradient(90deg, rgba(24,231,169,1) 0%, rgba(36,36,36,1) 2.5%, rgba(36,36,36,1) 100%);
+    color: white;
+}
+
+.profilePicture {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.lastMessage {  
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.status {
+    font-weight: normal;
+}
+
+.wrapPictureAndName {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 480px) {
+    .chat {
+        width: 14vw;
+    }
+
+    .selectedChat {
+        width: 14vw;
+    }
+
+    .status {
+        font-size: smaller;
+    }
+
+    .username {
+        font-size: smaller;
+    }
+}
+
+@media (min-width: 1024px) {
+    .chat {
+        width: 14.5vw;
+    }
+
+    .selectedChat {
+        width: 14.5vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .chat {
+        width: 16.5vw;
+    }
+
+    .selectedChat {
+        width: 16.5vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .status {
+        font-size: medium;
+    }
+
+    .username {
+        font-size: medium;
+    }
+}

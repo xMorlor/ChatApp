@@ -1,0 +1,43 @@
+.wrapDiv {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.users {
+    width: 100%;
+    background-color: #ECECEC;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.users::-webkit-scrollbar {
+    width: 10px;
+    height: 16px;
+}
+
+.users::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 16px;
+}
+
+.users::-webkit-scrollbar-track {
+    background: none;
+}

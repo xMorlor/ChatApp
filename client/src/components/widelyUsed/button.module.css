@@ -1,0 +1,46 @@
+.button {
+    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #ECECEC;
+    background-color: #44D4B4;
+    border: none;
+    border-radius: 9px;
+    width: 9vw;
+    height: 5vh;
+    font-size: 18px;
+    font-weight: bold;   
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #18E7A9;
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 39vw;
+        height: 5.5vh;
+    }
+}
+
+@media (min-width: 480px) {
+    .button {
+        width: 16vw;
+        height: 5.5vh;
+    }
+}
+
+@media (min-width: 1080px) {
+    .button {
+        width: 9vw;
+        height: 5vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .button {
+        width: 9vw;
+        height: 5vh;
+    }
+}
